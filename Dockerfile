@@ -19,7 +19,6 @@ RUN wget $BTC_SITE_PATH/$BTC_SCRIPT_FILENAME \
 	&& rm -rf bitcoin-qt test_bitcoin \
 	&& mv * /usr/local/bin 
 	
-
 FROM debian:stable-slim
 COPY --from=0 /usr/local/bin/* /usr/local/bin/
 ENTRYPOINT ["bitcoind"]
