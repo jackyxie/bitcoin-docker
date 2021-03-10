@@ -3,8 +3,8 @@ FROM buildpack-deps:buster-curl
 LABEL author="jackyxie"
 
 ENV BTC_VERSION 0.21.0
-ENV BTC_SITE_PATH https://bitcoincore.org/bin/bitcoin-core-${BITCOIN_VERSION}
-ENV BTC_SCRIPT_FILENAME bitcoin-${BITCOIN_VERSION}-x86_64-linux-gnu.tar.gz
+ENV BTC_SITE_PATH https://bitcoincore.org/bin/bitcoin-core-${BTC_VERSION}
+ENV BTC_SCRIPT_FILENAME bitcoin-${BTC_VERSION}-x86_64-linux-gnu.tar.gz
 ENV BTC_RELEASE_KEY 01EA5486DE18A882D4C2684590C8019E36C2E964
 
 RUN wget $BTC_SITE_PATH/$BTC_SCRIPT_FILENAME \
