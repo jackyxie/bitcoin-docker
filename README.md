@@ -1,2 +1,2 @@
-# bicoin-docker
+# bitcoin-docker
 bitcoin docker images
